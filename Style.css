@@ -1,6 +1,10 @@
 @@import url("https://fonts.googleapis.com/css?family=Arimo&display=swap");
 
 /* General Website Style */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #505050;
   margin: 0;
@@ -35,9 +39,6 @@ h1 {
   height: 100%;
 }
 
-.home h1 {
-}
-
 .home nav {
   display: inline-block;
   text-align: center;
@@ -68,8 +69,4 @@ h1 {
     font-weight: bold;
     overflow: hidden;
     visibility: hidden;
-}
-
-html {
-  scroll-behavior: smooth;
 }
