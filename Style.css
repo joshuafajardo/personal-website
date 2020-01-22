@@ -1,6 +1,23 @@
 @@import url("https://fonts.googleapis.com/css?family=Arimo&display=swap");
 
 /* General Website Style */
+.wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+
+.project h2 {
+  font-size: 60px;
+  margin: 30px;
+}
+
+.project p {
+  font-size: 25px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -22,48 +39,6 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 65px;
 }
-
-/* Burger */
-.menu-button {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  width: 90px;
-  height: 90px;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  padding: 10px;
-}
-
-.menu-button__burger {
-  width: 40px;
-  height: 4px;
-  background: #333;
-  border-radius: 4px;
-  transition: all 0.3s ease-in-out;
-}
-
-.menu-button__burger::before,
-.menu-button__burger::after {
-  content: '';
-  position: absolute;
-  width: 40px;
-  height: 4px;
-  background: #333;
-  border-radius: 4px;
-  transition: all 0.3s ease-in-out;
-}
-
-.menu-button__burger::before {
-  transform: translateY(-10px);
-}
-
-.menu-button__burger::after {
-  transform: translateY(10px);
-}
-
-
 
 /* Navigation Buttons */
 nav {
@@ -91,13 +66,6 @@ nav a:active {
   color: #333;
 }
 
-
-.wrapper {
-    overflow: hidden;
-    width: 100%;
-    height: 100vh;
-}
-
 /* Static Header Style */
 .static-header {
   display: flex;
@@ -122,8 +90,14 @@ nav a:active {
 .hero {
   display: flex;
   flex-direction: column;
-  background: rgba(200, 200, 200, 0.3);
   justify-content: center;
   align-items: center;
-  height: 100%;
+  min-height: 100vh;
+
+  background-image: url("/Background\ Images/Hero.jpg");
+  background-color: #bbb;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
