@@ -1,0 +1,103 @@
+@@import url("https://fonts.googleapis.com/css?family=Work+Sans&display=swap");
+
+/* General Website Style */
+.wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+
+.project h2 {
+  font-size: 60px;
+  margin: 30px;
+}
+
+.project p {
+  font-size: 25px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #505050;
+  margin: 0;
+  padding: 0;
+}
+* {
+  font-family: "Arimo", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #303030;
+  white-space: pre;
+}
+
+h1 {
+  font-size: 65px;
+}
+
+/* Navigation Buttons */
+nav {
+  display: inline-block;
+  text-align: center;
+  color: #CCC;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 22px;
+  color: inherit;
+}
+
+nav a:hover {
+  color: #777;
+}
+
+nav a:active {
+  color: #333;
+}
+
+/* Static Header Style */
+.static-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #FFFFFF;
+  overflow-y: hidden;
+  box-shadow: 0px 0px 5px grey;
+}
+
+.static-header a {
+  padding: 50px;
+}
+
+/* Hero Style */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  background-image: url("/Background\ Images/Hero.jpg");
+  background-color: #bbb;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
