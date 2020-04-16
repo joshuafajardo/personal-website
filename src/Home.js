@@ -1,5 +1,5 @@
 import React from 'react';
-import { Jumbotron, Nav, NavItem } from 'react-bootstrap';
+import { Jumbotron, Container, Nav, NavItem } from 'react-bootstrap';
 import styled from 'styled-components';
 import splitSky from './Assets/splitSky.jpg'
 
@@ -18,6 +18,13 @@ const Styles = styled.div`
         align-items: center;
         color: #ededed;
     }
+
+    .aboutMe{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
 `;
 
 export const Home = () => (
@@ -28,8 +35,15 @@ export const Home = () => (
             <Nav activeKey="/">
                 <NavItem> <Nav.Link href="/projects">Projects</Nav.Link></NavItem>
                 <NavItem> <Nav.Link href="/photography">Photography</Nav.Link></NavItem>
-                <NavItem> <Nav.Link href="/about">About</Nav.Link></NavItem>
+                <NavItem> <Nav.Link href="/blog">Blog</Nav.Link></NavItem>
             </Nav>
         </Jumbotron>
+        <Container className='aboutMe'>
+            <img src="./Assets/me.jpg" alt="me!"/>
+            <div>
+                <h1>Hi, I'm Josh.</h1>
+                <p>stuff stuff stuff about me. Scroll down to see some of the work that I'm passionate about.</p>
+            </div>
+        </Container>
     </Styles>
 )

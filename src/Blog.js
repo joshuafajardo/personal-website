@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const About = () => (
+export const Blog = () => (
     <div>
         <h2>Project 1</h2>
         <p>
