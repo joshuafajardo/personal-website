@@ -1,10 +1,15 @@
 import React from 'react';
+import Gallery from './Components/Gallery.js';
+import { Layout } from './Components/Layout.js';
+
+const numImages = 3;
+var imageUrls = [numImages];
+for (let i = 0; i < numImages; i++) {
+    imageUrls[i] = ('./Assets/gallery-'.concat(i.toString(), '.jpg'));
+}
 
 export const Photography = () => (
-    <div>
-        <h2>Project 1</h2>
-        <p>
-            According to all known laws of aviation, there is no way a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway because bees don't care what humans think is impossible.
-        </p>
-    </div>
+    <Layout>
+        <Gallery images={imageUrls}/>
+    </Layout>
 )
