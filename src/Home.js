@@ -1,5 +1,6 @@
 import React from 'react';
 import { Jumbotron, Container, Nav, NavItem } from 'react-bootstrap';
+import "aos/dist/aos.css";
 import styled from 'styled-components';
 import splitSky from './Assets/splitSky.jpg'
 import me from './Assets/me.jpg'
@@ -20,11 +21,13 @@ const Styles = styled.div`
         color: #ededed;
     }
 
-    .preview{
+    section {
+        height: 100vh;
+        position: relative;
         display: flex;
-        flex-direction: row;
         justify-content: center;
         align-items: center;
+        flex-direction: row;
     }
 `;
 
@@ -39,20 +42,20 @@ export const Home = () => (
                 <NavItem> <Nav.Link href="/blog">Blog</Nav.Link></NavItem>
             </Nav>
         </Jumbotron>
-        <Container className='preview'>
+        <section data-aos="fade-up">
             <img src={me} alt="me!" height='200px' />
             <div>
                 <h1>Hi, I'm Josh.</h1>
                 <p>stuff stuff stuff about me. Scroll down to see some of the work that I'm passionate about.</p>
             </div>
-        </Container>
-        <Container className='preview'>
+        </section>
+        <section>
             <img src="" alt="Project 1" height='200px' />
             <div>
                 <h1>My Project</h1>
                 <p>How can we...?</p>
                 <a href="">View Project&#8594;</a>
             </div>
-        </Container>
+        </section>
     </Styles>
 )
