@@ -16,7 +16,7 @@ export default class Gallery extends React.Component {
     constructor(props) {
         super(props);
         this.state = {selected: null};
-    }
+    };
 
     render() {
         if (this.state.selected == null) {
@@ -30,5 +30,5 @@ export default class Gallery extends React.Component {
 
     handleClick(image) {
         return;
-    }
+    };
 }
