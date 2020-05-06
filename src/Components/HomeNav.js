@@ -6,13 +6,12 @@ const NavStyle = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    z-index: 10;
     position: fixed;
 
     .Current {
         writing-mode: vertical-lr;
         text-orientation: sideways;
-        width: 40px;
+        width: 20px;
         padding: 0px;
         border-right: 2px solid #333333;
     }
@@ -21,6 +20,8 @@ const NavStyle = styled.div`
         a:hover {
             text-decoration: none;
         }
+        display: flex;
+        flex-direction: column;
     }
 
 `
@@ -34,7 +35,7 @@ export default class HomeNav extends React.Component {
     componentDidMount() {
         const vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
         document.addEventListener('scroll', () => {
-            const newSect = window.scrollY % vh;
+            const newSect = Math.floor(window.scrollY / vh);
             if (newSect !== this.state.currSect) {
                 this.setState({currSect: newSect});
             };
@@ -53,8 +54,9 @@ export default class HomeNav extends React.Component {
         for (const section of this.props.sections) {
             if (this.props.sections[this.state.currSect] === section) {
                 htmlSections.push(<a href={'#'.concat(section)} font-weight='bold'>{section}</a>)
+            } else {
+                htmlSections.push(<a href={'#'.concat(section)}>{section}</a>)
             }
-            htmlSections.push(<a href={'#'.concat(section)}>{section}</a>)
         }
         return (
             <NavStyle>
