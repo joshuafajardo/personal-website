@@ -20,6 +20,9 @@ const Styles = styled.div`
     }
 
     .homeJumbo {
+        a {
+            color: PowderBlue;
+        }
         background: url(${splitSky}) no-repeat fixed center;
         background-size: cover;
         background-position: center;
@@ -32,6 +35,9 @@ const Styles = styled.div`
         justify-content: center;
         align-items: flex-start;
         color: #ededed;
+
+        z-index: 2;
+
     }
 
     section {
@@ -41,12 +47,13 @@ const Styles = styled.div`
         justify-content: center;
         align-items: center;
         flex-direction: row;
+        z-index: 0;
     }
 `;
 
 export const Home = () => (
     <Styles>
-        <HomeNav sections={['Home', 'About Me', 'Project Name']}></HomeNav>
+        <HomeNav sections={['Home', 'About Me', 'Project 1']}></HomeNav>
         <div>
             <Jumbotron fluid className='homeJumbo' id='Home'>
                 <h1>Joshua Fajardo</h1>
@@ -60,12 +67,12 @@ export const Home = () => (
             <section data-aos="fade-up" data-aos-offset="400" data-aos-delay="50" data-aos-duration="1200" id='About Me'>
                 <img src={me} alt="me!" height='200px'/>
                 <div>
-                    <h1>Hi, I'm Josh.</h1>
+                    <h1>Hi, I'm Josh</h1>
                     <p>stuff stuff stuff about me. Scroll down to see some of the work that I'm passionate about.</p>
                 </div>
             </section>
-            <section>
-                <img src="" alt="Project 1" height='200px' id='Project Name'/>
+            <section id='Project 1'>
+                <img src="" alt="Project 1" height='200px'/>
                 <div>
                     <h1>My Project</h1>
                     <p>How can we...?</p>

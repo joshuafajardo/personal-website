@@ -1,19 +1,15 @@
 import React from 'react';
 import styled from 'styled-components'
+import "aos/dist/aos.css";
 
 const NavStyle = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-
     .Current {
         writing-mode: vertical-lr;
         text-orientation: sideways;
-        width: 20px;
+        text-align: center;
+        width: 50px;
+        line-height: 50px; //keep this value the same as width
         padding: 0px;
-        border-right: 2px solid #333333;
     }
 
     .All {
@@ -22,8 +18,20 @@ const NavStyle = styled.div`
         }
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        vertical-align: middle;
+        height: 85%;
+        padding-left: 20px;
+        border-left: thin solid #333333;
     }
 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 100%;
+    z-index: 1;
 `
 
 export default class HomeNav extends React.Component {
@@ -46,7 +54,6 @@ export default class HomeNav extends React.Component {
         if (this.state.currSect === 0) {
             return (
                 <NavStyle>
-                    <div className="Current"/>
                 </NavStyle>
             )
         };
@@ -60,10 +67,10 @@ export default class HomeNav extends React.Component {
         }
         return (
             <NavStyle>
-                <div className="Current">
+                <div className="Current" data-aos="fade-zoom-in" data-aos-offset="0" data-aos-delay="100" data-aos-duration="1400">
                     {this.props.sections[this.state.currSect]}
                 </div>
-                <div className="All">
+                <div className="All" data-aos="fade-zoom-in" data-aos-offset="0" data-aos-delay="30" data-aos-duration="600">
                     {htmlSections}
                 </div>
             </NavStyle>
