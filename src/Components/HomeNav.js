@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
-import "aos/dist/aos.css";
+import Fade from 'react-bootstrap/Fade'
 
 const NavStyle = styled.div`
     .Current {
@@ -37,7 +37,8 @@ const NavStyle = styled.div`
 export default class HomeNav extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {currSect: 0};
+        this.state = {currSect: 0,
+                      show: false};
     };
 
     componentDidMount() {
@@ -47,16 +48,15 @@ export default class HomeNav extends React.Component {
             if (newSect !== this.state.currSect) {
                 this.setState({currSect: newSect});
             };
+            if (newSect === 0) {
+                this.setState({show: false});
+            } else {
+                this.setState({show: true});
+            };
         });
     };
 
     render() {
-        if (this.state.currSect === 0) {
-            return (
-                <NavStyle>
-                </NavStyle>
-            )
-        };
         const htmlSections = [];
         for (const section of this.props.sections) {
             if (this.props.sections[this.state.currSect] === section) {
@@ -66,14 +66,16 @@ export default class HomeNav extends React.Component {
             }
         }
         return (
-            <NavStyle>
-                <div className="Current" data-aos="fade-zoom-in" data-aos-offset="0" data-aos-delay="100" data-aos-duration="1400">
-                    {this.props.sections[this.state.currSect]}
-                </div>
-                <div className="All" data-aos="fade-zoom-in" data-aos-offset="0" data-aos-delay="30" data-aos-duration="600">
-                    {htmlSections}
-                </div>
-            </NavStyle>
+            <Fade in={this.state.show}>
+                <NavStyle>
+                    <div className="Current">
+                        {this.props.sections[this.state.currSect]}
+                    </div>
+                    <div className="All">
+                        {htmlSections}
+                    </div>
+                </NavStyle>
+            </Fade>
         );
     };
 };

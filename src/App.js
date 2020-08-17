@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import Aos from "aos";
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css'; //important for bootstrap!
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
@@ -11,9 +10,6 @@ import { NoMatch } from './NoMatch';
 
 
 function App() {
-  useEffect(() => {
-    Aos.init({});
-  }, []);
   return (
     <React.Fragment>
       <Router>

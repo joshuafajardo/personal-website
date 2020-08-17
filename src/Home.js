@@ -1,7 +1,6 @@
 import React from 'react';
 import { Jumbotron, Container, Nav, NavItem } from 'react-bootstrap';
 import HomeNav from './Components/HomeNav'
-import "aos/dist/aos.css";
 import styled from 'styled-components';
 import splitSky from './Assets/splitSky.jpg'
 import me from './Assets/me.jpg'
@@ -67,11 +66,11 @@ const Styles = styled.div`
 
 export const Home = () => (
     <Styles>
-        <HomeNav sections={['Home', 'About Me', 'Project 1']}></HomeNav>
+        <HomeNav sections={['Home', 'About Me', 'My Very Own Website']}></HomeNav>
         <div id="sectContainer">
             <Jumbotron fluid className='homeJumbo' id='Home'>
                 <h1>Joshua Fajardo</h1>
-                <h2>UC Berkeley EECS | Photography</h2>
+                <h2>UC Berkeley EECS/MechE | Photography</h2>
                 <div className="smallNavigation">
                     <a href="/projects">Projects</a>
                     <a href="/photography">Photography</a>
@@ -85,11 +84,11 @@ export const Home = () => (
                     <p>stuff stuff stuff about me. Scroll down to see some of the work that I'm passionate about.</p>
                 </div>
             </section>
-            <section id='Project 1'>
-                <img src="" alt="Project 1" height='200px'/>
+            <section id='My Very Own Website'>
+                <img src="" alt="Website Logo" height='200px'/>
                 <div>
-                    <h1>My Project</h1>
-                    <p>How can we...?</p>
+                    <h1>My Very Own Website</h1>
+                    <p>What is Web Dev Like?</p>
                     <a href="">View Project&#8594;</a>
                 </div>
             </section>
