@@ -22,7 +22,7 @@ const NavStyle = styled.div`
         vertical-align: middle;
         height: 85%;
         padding-left: 20px;
-        border-left: thin solid #333333;
+        border-left: thin solid #AAAAAA;
     }
 
     display: flex;

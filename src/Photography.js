@@ -1,15 +1,17 @@
 import React from 'react';
-import Gallery from './Components/Gallery.js';
+import Gallery from "react-photo-gallery";
 import { Layout } from './Components/Layout.js';
 
 const numImages = 3;
-var imageUrls = [numImages];
+var photoUrls = [numImages];
 for (let i = 0; i < numImages; i++) {
-    imageUrls[i] = ('./Assets/gallery-'.concat(i.toString(), '.jpg'));
+    photoUrls[i] = {src:'./Assets/gallery-'.concat([i.toString(), '.jpg']),
+                    width: 3,
+                    height: 3}
 }
 
 export const Photography = () => (
     <Layout>
-        <Gallery images={imageUrls}/>
+        <Gallery photos={photoUrls}/>
     </Layout>
 )

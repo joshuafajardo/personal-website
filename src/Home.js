@@ -6,11 +6,13 @@ import styled from 'styled-components';
 import splitSky from './Assets/splitSky.jpg'
 import me from './Assets/me.jpg'
 
+
 const Styles = styled.div`
     #sectContainer {
         overflow: scroll;
         height: 100vh;
         scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
 
         ::-webkit-scrollbar {
             display: none;
