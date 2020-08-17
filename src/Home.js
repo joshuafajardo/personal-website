@@ -7,6 +7,16 @@ import splitSky from './Assets/splitSky.jpg'
 import me from './Assets/me.jpg'
 
 const Styles = styled.div`
+    #sectContainer {
+        overflow: scroll;
+        height: 100vh;
+        scroll-snap-type: y mandatory;
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
     .smallNavigation {
         display: flex;
         flex-direction: row;
@@ -37,6 +47,7 @@ const Styles = styled.div`
         color: #ededed;
 
         z-index: 2;
+        scroll-snap-align: start;
 
     }
 
@@ -48,13 +59,14 @@ const Styles = styled.div`
         align-items: center;
         flex-direction: row;
         z-index: 0;
+        scroll-snap-align: start;
     }
 `;
 
 export const Home = () => (
     <Styles>
         <HomeNav sections={['Home', 'About Me', 'Project 1']}></HomeNav>
-        <div>
+        <div id="sectContainer">
             <Jumbotron fluid className='homeJumbo' id='Home'>
                 <h1>Joshua Fajardo</h1>
                 <h2>UC Berkeley EECS | Photography</h2>
@@ -64,7 +76,7 @@ export const Home = () => (
                     <a href="/blog">Blog</a>
                 </div>
             </Jumbotron>
-            <section data-aos="fade-up" data-aos-offset="400" data-aos-delay="50" data-aos-duration="1200" id='About Me'>
+            <section id='About Me'>
                 <img src={me} alt="me!" height='200px'/>
                 <div>
                     <h1>Hi, I'm Josh</h1>

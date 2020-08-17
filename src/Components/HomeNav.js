@@ -42,8 +42,8 @@ export default class HomeNav extends React.Component {
 
     componentDidMount() {
         const vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-        document.addEventListener('scroll', () => {
-            const newSect = Math.floor(window.scrollY / vh);
+        document.getElementById('sectContainer').addEventListener('scroll', () => {
+            const newSect = Math.floor(document.getElementById('sectContainer').scrollTop / vh);
             if (newSect !== this.state.currSect) {
                 this.setState({currSect: newSect});
             };

@@ -7,10 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: left;
   scroll-behavior: smooth;
-}
-
-body::-webkit-scrollbar {
-  display: none;
+  overflow: hidden;
 }
 
 code {
