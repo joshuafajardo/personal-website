@@ -19,6 +19,7 @@ const NavStyle = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: center;
+        vertical-align: middle;
         height: 85%;
         padding-left: 20px;
         border-left: thin solid #333333;
@@ -41,7 +42,7 @@ export default class HomeNav extends React.Component {
 
     componentDidMount() {
         const vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-        document.getElementById('sectContainer').addEventListener('scroll', () => {
+        document.addEventListener('scroll', () => {
             const newSect = Math.floor(window.scrollY / vh);
             if (newSect !== this.state.currSect) {
                 this.setState({currSect: newSect});
@@ -50,6 +51,12 @@ export default class HomeNav extends React.Component {
     };
 
     render() {
+        if (this.state.currSect === 0) {
+            return (
+                <NavStyle>
+                </NavStyle>
+            )
+        };
         const htmlSections = [];
         for (const section of this.props.sections) {
             if (this.props.sections[this.state.currSect] === section) {
@@ -63,7 +70,7 @@ export default class HomeNav extends React.Component {
                 <div className="Current" data-aos="fade-zoom-in" data-aos-offset="0" data-aos-delay="100" data-aos-duration="1400">
                     {this.props.sections[this.state.currSect]}
                 </div>
-                <div className="All">
+                <div className="All" data-aos="fade-zoom-in" data-aos-offset="0" data-aos-delay="30" data-aos-duration="600">
                     {htmlSections}
                 </div>
             </NavStyle>
