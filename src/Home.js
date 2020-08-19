@@ -65,6 +65,7 @@ const Styles = styled.div`
         position: relative;
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         align-items: center;
         flex-direction: row;
         z-index: 0;
@@ -78,6 +79,7 @@ const Styles = styled.div`
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        flex-wrap: wrap;
         z-index: 0;
         scroll-snap-align: start;
     }
