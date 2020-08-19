@@ -12,7 +12,6 @@ import berkeley_3 from './Assets/PortfolioPhotos/berkeley_3.jpg';
 import berkeley_4 from './Assets/PortfolioPhotos/berkeley_4.jpg';
 import berkeley_5 from './Assets/PortfolioPhotos/berkeley_5.jpg';
 
-
 import la_0 from './Assets/PortfolioPhotos/la_0.jpg';
 
 const Styles = styled.div`
