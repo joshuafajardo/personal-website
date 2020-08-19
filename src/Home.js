@@ -64,15 +64,24 @@ const Styles = styled.div`
     }
 `;
 
+
+const projects = ['Prosthetic Simulator', 'Heal-Bot', 'RSA-Protected Chat Client', 'My Very Own Website'];
+const photography = ['Berkeley, CA', 'Los Angeles, CA', 'Carson, CA'];
+const blog = ['Blog post 1']
+
 export const Home = () => (
     <Styles>
-        <HomeNav sections={['Home', 'About Me', 'My Very Own Website']}></HomeNav>
+        <HomeNav sections={[['Home', [null]], 
+                            ['About Me', [null]], 
+                            ['Projects', projects], 
+                            ['Photography', photography], 
+                            ['Blog', blog]]}/>
         <div id="sectContainer">
             <Jumbotron fluid className='homeJumbo' id='Home'>
                 <h1>Joshua Fajardo</h1>
                 <h2>UC Berkeley EECS/MechE | Photography</h2>
                 <div className="smallNavigation">
-                    <a href="/projects">Projects</a>
+                    <a href="#My Very Own Website">Projects</a>
                     <a href="/photography">Photography</a>
                     <a href="/blog">Blog</a>
                 </div>
