@@ -11,7 +11,7 @@ function App() {
     <React.Fragment>
       <Router>
         <Switch>
-          <Route exact path="/personal-website/" component={Home} />
+          <Route exact path="/" component={Home} />
           <Route component={NoMatch} />
         </Switch>
       </Router>
