@@ -93,11 +93,35 @@ export const Home = () => (
                     <p>stuff stuff stuff about me. Scroll down to see some of the work that I'm passionate about.</p>
                 </div>
             </section>
-            <section id='My Very Own Website'>
-                <img src="" alt="Website Logo" height='200px'/>
+            <section id={'Prosthetic Simulator'}>
+                <img src="" alt={'Prosthetic Simulator'} height='200px'/>
                 <div>
-                    <h1>My Very Own Website</h1>
-                    <p>What is Web Dev Like?</p>
+                    <h1>{'Prosthetic Simulator'}</h1>
+                    <p>How can we assess the effectiveness of haptic feedback in upper-limb prosthetics?</p>
+                    <a href="">View Project&#8594;</a>
+                </div>
+            </section>
+            <section id={'Heal-Bot'}>
+                <img src="" alt={'Heal-Bot'} height='200px'/>
+                <div>
+                    <h1>{'Heal-Bot'}</h1>
+                    <p>How can we make Coronavirus-related information feel more accessible?</p>
+                    <a href="">View Project&#8594;</a>
+                </div>
+            </section>
+            <section id={'RSA-Protected Chat Client'}>
+                <img src="" alt={'RSA-Protected Chat Client'} height='200px'/>
+                <div>
+                    <h1>{'RSA-Protected Chat Client'}</h1>
+                    <p>How can we ensure the privacy of messages?</p>
+                    <a href="">View Project&#8594;</a>
+                </div>
+            </section>
+            <section id={'My Very Own Website'}>
+                <img src="" alt={'My Very Own Website'} height='200px'/>
+                <div>
+                    <h1>{'My Very Own Website'}</h1>
+                    <p>What is the best way for me to showcase my work?</p>
                     <a href="">View Project&#8594;</a>
                 </div>
             </section>

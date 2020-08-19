@@ -96,16 +96,17 @@ export default class HomeNav extends React.Component {
                 majorSections.push(<a href={'#'.concat(majorHref)}>{majorSect}</a>);
             }
             if (minorSects[0] !== null) {
-                for (const subSection of minorSects) {
-                    if (subSection === allSections[this.state.currSect[0]][this.state.currSect[1]]) {
+                let length = minorSects.length;
+                let subSection;
+                for (var i = 0; i < length; i++) {
+                    subSection = minorSects[i];
+                    if (isCurrentMajor && i === this.state.currSect[1]) {
                         subSections.push(<a href={'#'.concat(subSection)} style={{color: '#84a8ac'}}> - {subSection}</a>);
                     } else {
                         subSections.push(<a href={'#'.concat(subSection)}> - {subSection}</a>);
                     }
                     subSections.push(<br/>);
                 }
-                console.log(isCurrentMajor)
-                console.log(majorSect)
                 majorSections.push(
                     <Collapse in={isCurrentMajor}>
                         <div>
