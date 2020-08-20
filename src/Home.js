@@ -15,6 +15,10 @@ import berkeley_5 from './Assets/PortfolioPhotos/berkeley_5.jpg';
 import la_0 from './Assets/PortfolioPhotos/la_0.jpg';
 
 const Styles = styled.div`
+    a {
+        color: PowderBlue;
+    }
+
     #sectContainer {
         overflow: scroll;
         height: 100vh;
@@ -31,17 +35,10 @@ const Styles = styled.div`
         flex-direction: row;
         a {
             margin-right: 40px;
-            
-            :hover {
-                text-decoration: none;
-            }
         }
     }
 
     .homeJumbo {
-        a {
-            color: PowderBlue;
-        }
         background: url(${splitSky}) no-repeat fixed center;
         background-size: cover;
         background-position: center;
@@ -133,7 +130,7 @@ export const Home = () => (
                 <div>
                     <h1>Prosthetic Simulator</h1>
                     <p>How can we assess the effectiveness of haptic feedback in upper-limb prosthetics?</p>
-                    <a href="">View Project&#8594;</a>
+                    <a href="/prosthetic-simulator">View Project&#8594;</a>
                 </div>
             </section>
             <section id='Heal-Bot' className='Projects'>

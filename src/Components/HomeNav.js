@@ -1,7 +1,7 @@
 import React from 'react';
-import styled from 'styled-components'
-import Fade from 'react-bootstrap/Fade'
-import Collapse from 'react-bootstrap/Collapse'
+import styled from 'styled-components';
+import Fade from 'react-bootstrap/Fade';
+import Collapse from 'react-bootstrap/Collapse';
 
 const NavStyle = styled.div`
     .Current {
@@ -14,9 +14,6 @@ const NavStyle = styled.div`
     }
 
     .All {
-        a:hover {
-            text-decoration: none;
-        }
         display: flex;
         flex-direction: column;
         justify-content: center;
