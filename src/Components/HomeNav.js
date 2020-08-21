@@ -65,13 +65,14 @@ export default class HomeNav extends React.Component {
             if (!(newSect[0] === this.state.currSect[0] && newSect[1] === this.state.currSect[1])) {
                 this.setState({currSect: newSect});
             };
-            if (newSect[0] === 0) {
-                this.setState({show: false});
-            } else {
-                this.setState({show: true});
-            };
+            this.setState({show: newSect[0] !== 0});
         });
     };
+
+    componentWillUnmount() {
+        document.getElementById('sectContainer').removeEventListener('scroll', this.getSections);
+    }
+
 
     render() {
         var allSections = this.props.sections;

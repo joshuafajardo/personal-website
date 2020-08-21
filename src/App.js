@@ -2,7 +2,7 @@ import React from 'react';
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css'; //important for bootstrap!
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
-import { Home } from './Home';
+import Home from './Home';
 import { NoMatch } from './NoMatch';
 import Prosthetic from './projects/prosthetic.js';
 
