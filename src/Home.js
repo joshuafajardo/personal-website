@@ -200,7 +200,7 @@ export default class Home extends React.Component {
                 
                 <div id="sectContainer">
                     <Jumbotron fluid className='homeJumbo' id='Home'>
-                        <h1>Joshua Fajardo</h1>
+                        <h1>Joshua Fajardo (Work in Progress Website)</h1>
                         <h2>UC Berkeley EECS/MechE | Photography</h2>
                         <div className="smallNavigation">
                             <a href="#Prosthetic Simulator">Projects</a>
@@ -212,12 +212,19 @@ export default class Home extends React.Component {
                         <img src={me} alt="me!"/>
                         <div>
                             <h1>Hi, I'm Josh</h1>
-                            <p>I'm a third-year Electrical Engineering & Computer Sciences (EECS) student at the
+                            <p>
+                                I'm a third-year Electrical Engineering & Computer Sciences (EECS) student at the
                                 University of California, Berkeley. I'm an aspiring software engineer with interests in
                                 robotics and web development.
-                                
+                            </p>
+                            <br/>
+                            <p>
+                                More information to come.
+                            </p>
+                            <p>
                                 Scroll down to learn more about my previous
-                                works.</p>
+                                works.
+                            </p>
                         </div>
                     </section>
                     <section id='Prosthetic Simulator' className='Projects'>
@@ -233,7 +240,7 @@ export default class Home extends React.Component {
                         <div>
                             <h1>Heal-Bot</h1>
                             <p>How can we make Coronavirus-related information feel more accessible?</p>
-                            <a href="">View Project&#8594;</a>
+                            <a href="https://devpost.com/software/a-m7lzpr">View Project&#8594;</a>
                         </div>
                     </section>
                     <section id='RSA-Protected Chat Client' className='Projects'>
@@ -241,7 +248,7 @@ export default class Home extends React.Component {
                         <div>
                             <h1>RSA-Protected Chat Client</h1>
                             <p>How can we ensure the privacy of messages?</p>
-                            <a href="">View Project&#8594;</a>
+                            <a href="https://github.com/Suspxt/safe-communication">View Project&#8594;</a>
                         </div>
                     </section>
                     <section id='My Very Own Website' className='Projects'>
@@ -249,7 +256,7 @@ export default class Home extends React.Component {
                         <div>
                             <h1>My Very Own Website</h1>
                             <p>What is the best way for me to showcase my work?</p>
-                            <a href="">View Project&#8594;</a>
+                            <a href="https://github.com/Suspxt/personal-website">View Project&#8594;</a>
                         </div>
                     </section>
                     <section id='Berkeley, CA' className ='Photography'>
@@ -269,7 +276,7 @@ export default class Home extends React.Component {
                     <section id='Los Angeles, CA' className ='Photography'>
                         <div>
                             <h1>Los Angeles, CA</h1>
-                            <p>you can be my angle or my devil</p>
+                            <p>the angels</p>
                         </div>
                         <div className={galleryType}>
                             <img src={la_0}/>
