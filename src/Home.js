@@ -15,6 +15,10 @@ import berkeley_5 from './Assets/PortfolioPhotos/berkeley_5.jpg';
 
 import la_0 from './Assets/PortfolioPhotos/la_0.jpg';
 
+import LinkedIn from './Assets/Logos/LinkedIn.png';
+import Instagram from './Assets/Logos/Instagram.png';
+
+
 const Styles = styled.div`
     a {
         color: PowderBlue;
@@ -68,6 +72,15 @@ const Styles = styled.div`
         flex-direction: row;
         z-index: 0;
         scroll-snap-align: start;
+        
+        img {
+            height: 200px;
+            padding: 20px;
+        }
+        
+        div {
+            max-height: 70vh;
+        }
     }
     
     .Photography {
@@ -80,6 +93,22 @@ const Styles = styled.div`
         flex-wrap: wrap;
         z-index: 0;
         scroll-snap-align: start;
+    }
+
+    .Contact {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 0;
+        scroll-snap-align: start;
+        
+        img {
+            height: 46px;
+            width: auto;
+            padding: 8px;
+        }
     }
 
     .Gallery {
@@ -121,7 +150,6 @@ const Styles = styled.div`
 
 const projects = ['Prosthetic Simulator', 'Heal-Bot', 'RSA-Protected Chat Client', 'My Very Own Website'];
 const photography = ['Berkeley, CA', 'Los Angeles, CA'];
-const blog = ['Blog post 1']
 
 export default class Home extends React.Component {
     constructor(props) {
@@ -143,6 +171,12 @@ export default class Home extends React.Component {
 
     checkScreenSize() {
         this.setState({ isDesktop: window.innerWidth > 999 });
+        const width = "calc(100% - ".concat(this.state.isDesktop ? '1000' : '0', "px)");
+        var sections = document.querySelectorAll("section.Projects > div");
+        for (const section of sections) {
+            section.style.width = width;
+        }
+        
     }
     
     render() {
@@ -153,14 +187,14 @@ export default class Home extends React.Component {
                         <HomeNav sections={[['Home', [null]], 
                         ['About Me', [null]], 
                         ['Projects', projects], 
-                        ['Photography', photography], 
-                        ['Blog', blog]]}/>
+                        ['Photography', photography],
+                        ['Contact Me', [null]]]}/>
                     ) : (
                         <HomeNavMobile sections={[['Home', [null]], 
                         ['About Me', [null]], 
                         ['Projects', projects], 
                         ['Photography', photography], 
-                        ['Blog', blog]]}/>
+                        ['Contact Me', [null]]]}/>
                     )
                 }
                 
@@ -171,26 +205,31 @@ export default class Home extends React.Component {
                         <div className="smallNavigation">
                             <a href="#Prosthetic Simulator">Projects</a>
                             <a href="#Berkeley, CA">Photography</a>
-                            <a href="/blog">Blog</a>
+                            <a href="#Contact Me">Contact Me</a>
                         </div>
                     </Jumbotron>
                     <section id='About Me' className='Projects'>
-                        <img src={me} alt="me!" height='200px'/>
+                        <img src={me} alt="me!"/>
                         <div>
                             <h1>Hi, I'm Josh</h1>
-                            <p>stuff stuff stuff about me. Scroll down to see some of the work that I'm passionate about.</p>
+                            <p>I'm a third-year Electrical Engineering & Computer Sciences (EECS) student at the
+                                University of California, Berkeley. I'm an aspiring software engineer with interests in
+                                robotics and web development.
+                                
+                                Scroll down to learn more about my previous
+                                works.</p>
                         </div>
                     </section>
                     <section id='Prosthetic Simulator' className='Projects'>
-                        <img src="" alt='Prosthetic Simulator' height='200px'/>
+                        <img src="" alt='Prosthetic Simulator'/>
                         <div>
                             <h1>Prosthetic Simulator</h1>
                             <p>How can we assess the effectiveness of haptic feedback in upper-limb prosthetics?</p>
-                            <a href="/prosthetic-simulator">View Project&#8594;</a>
+                            <a href="https://github.com/Suspxt/prosthetic-gui">View Project&#8594;</a>
                         </div>
                     </section>
                     <section id='Heal-Bot' className='Projects'>
-                        <img src="" alt='Heal-Bot' height='200px'/>
+                        <img src="" alt='Heal-Bot'/>
                         <div>
                             <h1>Heal-Bot</h1>
                             <p>How can we make Coronavirus-related information feel more accessible?</p>
@@ -198,7 +237,7 @@ export default class Home extends React.Component {
                         </div>
                     </section>
                     <section id='RSA-Protected Chat Client' className='Projects'>
-                        <img src="" alt='RSA-Protected Chat Client' height='200px'/>
+                        <img src="" alt='RSA-Protected Chat Client'/>
                         <div>
                             <h1>RSA-Protected Chat Client</h1>
                             <p>How can we ensure the privacy of messages?</p>
@@ -206,7 +245,7 @@ export default class Home extends React.Component {
                         </div>
                     </section>
                     <section id='My Very Own Website' className='Projects'>
-                        <img src="" alt='My Very Own Website' height='200px'/>
+                        <img src="" alt='My Very Own Website'/>
                         <div>
                             <h1>My Very Own Website</h1>
                             <p>What is the best way for me to showcase my work?</p>
@@ -234,6 +273,22 @@ export default class Home extends React.Component {
                         </div>
                         <div className={galleryType}>
                             <img src={la_0}/>
+                        </div>
+                    </section>
+                    <section id='Contact Me' className='Contact'>
+                        <h1>Contact Me</h1>
+                        <p>Email: jdfajardo (at) berkeley (dot) edu</p>
+                        <div>
+                            <a href="https://www.linkedin.com/in/joshuafajardo/">
+                                <img src={LinkedIn}/>
+                                &nbsp;&nbsp;LinkedIn
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/suspxt.jpg/">
+                                <img src={Instagram}/>
+                                &nbsp;&nbsp;Instagram
+                            </a>
                         </div>
                     </section>
                 </div>

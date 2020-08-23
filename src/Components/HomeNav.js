@@ -55,6 +55,7 @@ export default class HomeNav extends React.Component {
                 return [i, curr];
             }
         }
+        return [0, 0];
     }
 
     componentDidMount() {
