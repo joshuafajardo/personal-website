@@ -1,35 +1,39 @@
 {
   "files": {
     "main.css": "/static/css/main.fc3971f6.chunk.css",
-    "main.js": "/static/js/main.2e27066c.chunk.js",
-    "main.js.map": "/static/js/main.2e27066c.chunk.js.map",
+    "main.js": "/static/js/main.443d3b8f.chunk.js",
+    "main.js.map": "/static/js/main.443d3b8f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ce89729d.js",
     "runtime-main.js.map": "/static/js/runtime-main.ce89729d.js.map",
     "static/css/2.11829350.chunk.css": "/static/css/2.11829350.chunk.css",
-    "static/js/2.0131f7ad.chunk.js": "/static/js/2.0131f7ad.chunk.js",
-    "static/js/2.0131f7ad.chunk.js.map": "/static/js/2.0131f7ad.chunk.js.map",
+    "static/js/2.270f0d61.chunk.js": "/static/js/2.270f0d61.chunk.js",
+    "static/js/2.270f0d61.chunk.js.map": "/static/js/2.270f0d61.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.bf6423068267784a6bcfb16c08fc9e3f.js": "/precache-manifest.bf6423068267784a6bcfb16c08fc9e3f.js",
+    "precache-manifest.ba294cbfad9643bf675a0fdd8629a095.js": "/precache-manifest.ba294cbfad9643bf675a0fdd8629a095.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.11829350.chunk.css.map": "/static/css/2.11829350.chunk.css.map",
     "static/css/main.fc3971f6.chunk.css.map": "/static/css/main.fc3971f6.chunk.css.map",
-    "static/js/2.0131f7ad.chunk.js.LICENSE.txt": "/static/js/2.0131f7ad.chunk.js.LICENSE.txt",
+    "static/js/2.270f0d61.chunk.js.LICENSE.txt": "/static/js/2.270f0d61.chunk.js.LICENSE.txt",
     "static/media/Instagram.png": "/static/media/Instagram.0e84d592.png",
     "static/media/berkeley_0.jpg": "/static/media/berkeley_0.925f03ec.jpg",
-    "static/media/berkeley_1.jpg": "/static/media/berkeley_1.8739e5f4.jpg",
+    "static/media/berkeley_1.jpg": "/static/media/berkeley_1.4b705023.jpg",
     "static/media/berkeley_2.jpg": "/static/media/berkeley_2.2b86e4de.jpg",
     "static/media/berkeley_3.jpg": "/static/media/berkeley_3.852095b7.jpg",
     "static/media/berkeley_4.jpg": "/static/media/berkeley_4.e96e2129.jpg",
     "static/media/berkeley_5.jpg": "/static/media/berkeley_5.58c6ab13.jpg",
+    "static/media/berkeley_6.jpg": "/static/media/berkeley_6.ba904e6f.jpg",
+    "static/media/berkeley_7.jpg": "/static/media/berkeley_7.6282503a.jpg",
     "static/media/la_0.jpg": "/static/media/la_0.38714b21.jpg",
+    "static/media/la_1.jpg": "/static/media/la_1.f17a0ef5.jpg",
+    "static/media/la_2.jpg": "/static/media/la_2.e71521b5.jpg",
     "static/media/me.jpg": "/static/media/me.7efc5e07.jpg",
     "static/media/splitSky.jpg": "/static/media/splitSky.925f03ec.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.ce89729d.js",
     "static/css/2.11829350.chunk.css",
-    "static/js/2.0131f7ad.chunk.js",
+    "static/js/2.270f0d61.chunk.js",
     "static/css/main.fc3971f6.chunk.css",
-    "static/js/main.2e27066c.chunk.js"
+    "static/js/main.443d3b8f.chunk.js"
   ]
 }
