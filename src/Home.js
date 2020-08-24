@@ -12,8 +12,12 @@ import berkeley_2 from './Assets/PortfolioPhotos/berkeley_2.jpg';
 import berkeley_3 from './Assets/PortfolioPhotos/berkeley_3.jpg';
 import berkeley_4 from './Assets/PortfolioPhotos/berkeley_4.jpg';
 import berkeley_5 from './Assets/PortfolioPhotos/berkeley_5.jpg';
+import berkeley_6 from './Assets/PortfolioPhotos/berkeley_6.jpg';
+import berkeley_7 from './Assets/PortfolioPhotos/berkeley_7.jpg';
 
 import la_0 from './Assets/PortfolioPhotos/la_0.jpg';
+import la_1 from './Assets/PortfolioPhotos/la_1.jpg';
+import la_2 from './Assets/PortfolioPhotos/la_2.jpg';
 
 import LinkedIn from './Assets/Logos/LinkedIn.png';
 import Instagram from './Assets/Logos/Instagram.png';
@@ -72,9 +76,11 @@ const Styles = styled.div`
         flex-direction: row;
         z-index: 0;
         scroll-snap-align: start;
+        padding: 3px;
         
         img {
-            height: 200px;
+            height: 300px;
+            width: auto;
             padding: 20px;
         }
         
@@ -93,6 +99,7 @@ const Styles = styled.div`
         flex-wrap: wrap;
         z-index: 0;
         scroll-snap-align: start;
+        padding: 5px;
     }
 
     .Contact {
@@ -201,7 +208,7 @@ export default class Home extends React.Component {
                 <div id="sectContainer">
                     <Jumbotron fluid className='homeJumbo' id='Home'>
                         <h1>Joshua Fajardo (Work in Progress Website)</h1>
-                        <h2>UC Berkeley EECS/MechE | Photography</h2>
+                        <h2>UC Berkeley EECS | Photography</h2>
                         <div className="smallNavigation">
                             <a href="#Prosthetic Simulator">Projects</a>
                             <a href="#Berkeley, CA">Photography</a>
@@ -215,11 +222,17 @@ export default class Home extends React.Component {
                             <p>
                                 I'm a third-year Electrical Engineering & Computer Sciences (EECS) student at the
                                 University of California, Berkeley. I'm an aspiring software engineer with interests in
-                                robotics and web development.
+                                robotics and full stack web development.
                             </p>
-                            <br/>
                             <p>
-                                More information to come.
+                                Though my original goal was to work as a mechatronics engineer, my passion for the 
+                                range of mathematical problems that computer science offers ultimately led me to pursue 
+                                a new career. My diverse background experience includes developing applications for use 
+                                in an engineering lab, building dynamic webpages, and creating an RSA-encrypted chat application.
+                            </p>
+                            <p>
+                                My aim is to eventually serve as the Head of Engineering at a robotics company, where I can guide 
+                                others, apply my experience, and continue to learn.
                             </p>
                             <p>
                                 Scroll down to learn more about my previous
@@ -228,36 +241,36 @@ export default class Home extends React.Component {
                         </div>
                     </section>
                     <section id='Prosthetic Simulator' className='Projects'>
-                        <img src="" alt='Prosthetic Simulator'/>
                         <div>
                             <h1>Prosthetic Simulator</h1>
                             <p>How can we assess the effectiveness of haptic feedback in upper-limb prosthetics?</p>
                             <a href="https://github.com/Suspxt/prosthetic-gui">View Project&#8594;</a>
                         </div>
+                        <img src="" alt='Prosthetic Simulator'/>
                     </section>
                     <section id='Heal-Bot' className='Projects'>
-                        <img src="" alt='Heal-Bot'/>
                         <div>
                             <h1>Heal-Bot</h1>
                             <p>How can we make Coronavirus-related information feel more accessible?</p>
                             <a href="https://devpost.com/software/a-m7lzpr">View Project&#8594;</a>
                         </div>
+                        <img src="" alt='Heal-Bot'/>
                     </section>
                     <section id='RSA-Protected Chat Client' className='Projects'>
-                        <img src="" alt='RSA-Protected Chat Client'/>
                         <div>
                             <h1>RSA-Protected Chat Client</h1>
                             <p>How can we ensure the privacy of messages?</p>
                             <a href="https://github.com/Suspxt/safe-communication">View Project&#8594;</a>
                         </div>
+                        <img src="" alt='RSA-Protected Chat Client'/>
                     </section>
                     <section id='My Very Own Website' className='Projects'>
-                        <img src="" alt='My Very Own Website'/>
                         <div>
                             <h1>My Very Own Website</h1>
                             <p>What is the best way for me to showcase my work?</p>
                             <a href="https://github.com/Suspxt/personal-website">View Project&#8594;</a>
                         </div>
+                        <img src="" alt='My Very Own Website'/>
                     </section>
                     <section id='Berkeley, CA' className ='Photography'>
                         <div>
@@ -271,6 +284,8 @@ export default class Home extends React.Component {
                             <img src={berkeley_3}/>
                             <img src={berkeley_4}/>
                             <img src={berkeley_5}/>
+                            <img src={berkeley_6}/>
+                            <img src={berkeley_7}/>
                         </div>
                     </section>
                     <section id='Los Angeles, CA' className ='Photography'>
@@ -280,6 +295,8 @@ export default class Home extends React.Component {
                         </div>
                         <div className={galleryType}>
                             <img src={la_0}/>
+                            <img src={la_1}/>
+                            <img src={la_2}/>
                         </div>
                     </section>
                     <section id='Contact Me' className='Contact'>
