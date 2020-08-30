@@ -10,13 +10,13 @@ import Prosthetic from './projects/prosthetic.js';
 function App() {
   return (
     <React.Fragment>
-      <Router>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/prosthetic-simulator" component={Prosthetic} />
-          <Route component={NoMatch} />
-        </Switch>
-      </Router>
+        <Router>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/prosthetic-simulator" component={Prosthetic} />
+            <Route component={NoMatch} />
+          </Switch>
+        </Router>
     </React.Fragment>
   );
 }

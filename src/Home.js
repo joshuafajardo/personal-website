@@ -2,9 +2,13 @@ import React from 'react';
 import { Jumbotron, Container, Nav, NavItem } from 'react-bootstrap';
 import HomeNav from './Components/HomeNav';
 import HomeNavMobile from './Components/HomeNavMobile';
+import SimpleReactLightbox, { SRLWrapper } from 'simple-react-lightbox'
 import styled from 'styled-components';
 import splitSky from './Assets/splitSky.jpg';
 import me from './Assets/me.jpg';
+
+import heal_bot from './Assets/Project_Icons/heal_bot.png';
+
 
 import berkeley_0 from './Assets/PortfolioPhotos/berkeley_0.jpg';
 import berkeley_1 from './Assets/PortfolioPhotos/berkeley_1.jpg';
@@ -220,12 +224,12 @@ export default class Home extends React.Component {
                         <div>
                             <h1>Hi, I'm Josh</h1>
                             <p>
-                                I'm a third-year Electrical Engineering & Computer Sciences (EECS) student at the
+                                I'm a third-year Electrical Engineering & Computer Sciences student at the
                                 University of California, Berkeley. I'm an aspiring software engineer with interests in
                                 robotics and full stack web development.
                             </p>
                             <p>
-                                Though my original goal was to work as a mechatronics engineer, my passion for the 
+                                Though my original goal was to work as a mechanical engineer, my passion for the 
                                 range of mathematical problems that computer science offers ultimately led me to pursue 
                                 a new career. My diverse background experience includes developing applications for use 
                                 in an engineering lab, building dynamic webpages, and creating an RSA-encrypted chat application.
@@ -235,8 +239,7 @@ export default class Home extends React.Component {
                                 others, apply my experience, and continue to learn.
                             </p>
                             <p>
-                                Scroll down to learn more about my previous
-                                works.
+                                Scroll down to see some of the work that I'm passionate about.
                             </p>
                         </div>
                     </section>
@@ -254,7 +257,7 @@ export default class Home extends React.Component {
                             <p>How can we make Coronavirus-related information feel more accessible?</p>
                             <a href="https://devpost.com/software/a-m7lzpr">View Project&#8594;</a>
                         </div>
-                        <img src="" alt='Heal-Bot'/>
+                        <img src={heal_bot} alt='Heal-Bot'/>
                     </section>
                     <section id='RSA-Protected Chat Client' className='Projects'>
                         <div>
@@ -277,27 +280,35 @@ export default class Home extends React.Component {
                             <h1>Berkeley, CA</h1>
                             <p>Photos from <del>the Underworld</del> Undergrad</p>
                         </div>
-                        <div className={galleryType}>
-                            <img src={berkeley_0}/>
-                            <img src={berkeley_1}/>
-                            <img src={berkeley_2}/>
-                            <img src={berkeley_3}/>
-                            <img src={berkeley_4}/>
-                            <img src={berkeley_5}/>
-                            <img src={berkeley_6}/>
-                            <img src={berkeley_7}/>
-                        </div>
+                        <SimpleReactLightbox>
+                            <SRLWrapper>
+                                <div className={galleryType}>
+                                    <img src={berkeley_0}/>
+                                    <img src={berkeley_1}/>
+                                    <img src={berkeley_2}/>
+                                    <img src={berkeley_3}/>
+                                    <img src={berkeley_4}/>
+                                    <img src={berkeley_5}/>
+                                    <img src={berkeley_6}/>
+                                    <img src={berkeley_7}/>
+                                </div>
+                            </SRLWrapper>
+                        </SimpleReactLightbox>
                     </section>
                     <section id='Los Angeles, CA' className ='Photography'>
                         <div>
                             <h1>Los Angeles, CA</h1>
                             <p>the angels</p>
                         </div>
-                        <div className={galleryType}>
-                            <img src={la_0}/>
-                            <img src={la_1}/>
-                            <img src={la_2}/>
-                        </div>
+                        <SimpleReactLightbox>
+                            <SRLWrapper>
+                                <div className={galleryType}>
+                                    <img src={la_0}/>
+                                    <img src={la_1}/>
+                                    <img src={la_2}/>
+                                </div>
+                            </SRLWrapper>
+                        </SimpleReactLightbox>
                     </section>
                     <section id='Contact Me' className='Contact'>
                         <h1>Contact Me</h1>

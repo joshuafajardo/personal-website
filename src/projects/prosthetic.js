@@ -26,10 +26,14 @@ export default class Prosthetic extends React.Component {
                         <p>Assessing kinesthetic feedback in prosthetics</p>
                     </div>
                     
+                    <h2>Haptic Feedback (n.)</h2>
+                    <p>
+                        Communication through the use of physical touch.
+                    </p>
+                    <br/>
                     <p>
                         In the fall of 2019, I joined the Embodied Dexterity Group (EDG) to do help conduct research on prosthetic devices. 
                         Our subgroup within EDG aims at better understanding how impactful haptic feedback can be in upper-limb prosthetics.
-                        
                     </p>
 
                     <h2>Problem Statement</h2>
@@ -46,7 +50,15 @@ export default class Prosthetic extends React.Component {
                         changes applied by our test subjects.
                     </p>
                     <p>
-                        
+                        To fill in this research gap, we developed a haptic feedback-equipped prosthetic arm. To accompany this, I spear-headed
+                        the development of an object lifting simulator. With these two technologies, we can very easily measure the forces applied
+                        by a user and vary the feedback amplification within testing trials.
+                    </p>
+
+                    <h2>Architecture</h2>
+                    <p>
+                        In order to cleanly divide the tasks required to make the simulator possible, I followed the Model-View-Controller (MVC)
+                        architecture while diverging from it as necessary. 
                     </p>
                     
                 </Styles>
