@@ -247,7 +247,7 @@ export default class Home extends React.Component {
                         <div>
                             <h1>Prosthetic Simulator</h1>
                             <p>How can we assess the effectiveness of haptic feedback in upper-limb prosthetics?</p>
-                            <a href="https://github.com/Suspxt/prosthetic-gui">View Project&#8594;</a>
+                            <a href="https://github.com/joshuafajardo/prosthetic-gui">View Project&#8594;</a>
                         </div>
                         <img src="" alt='Prosthetic Simulator'/>
                     </section>
@@ -263,7 +263,7 @@ export default class Home extends React.Component {
                         <div>
                             <h1>RSA-Protected Chat Client</h1>
                             <p>How can we ensure the privacy of messages?</p>
-                            <a href="https://github.com/Suspxt/safe-communication">View Project&#8594;</a>
+                            <a href="https://github.com/joshuafajardo/safe-communication">View Project&#8594;</a>
                         </div>
                         <img src="" alt='RSA-Protected Chat Client'/>
                     </section>
@@ -271,7 +271,7 @@ export default class Home extends React.Component {
                         <div>
                             <h1>My Very Own Website</h1>
                             <p>What is the best way for me to showcase my work?</p>
-                            <a href="https://github.com/Suspxt/personal-website">View Project&#8594;</a>
+                            <a href="https://github.com/joshuafajardo/personal-website">View Project&#8594;</a>
                         </div>
                         <img src="" alt='My Very Own Website'/>
                     </section>
