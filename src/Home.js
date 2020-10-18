@@ -164,7 +164,7 @@ const photography = ['Berkeley, CA', 'Los Angeles, CA'];
 
 export default class Home extends React.Component {
     constructor(props) {
-        super(props);
+        super()
         this.state = {
             isDesktop: true
         }
@@ -246,7 +246,7 @@ export default class Home extends React.Component {
                     <section id='Prosthetic Simulator' className='Projects'>
                         <div>
                             <h1>Prosthetic Simulator</h1>
-                            <p>How can we assess the effectiveness of haptic feedback in upper-limb prosthetics?</p>
+                            <p>How can we make prosthetic devices feel most natural?</p>
                             <a href="https://github.com/joshuafajardo/prosthetic-gui">View Project&#8594;</a>
                         </div>
                         <img src="" alt='Prosthetic Simulator'/>

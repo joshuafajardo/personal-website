@@ -13,8 +13,7 @@ const Styles = styled.div`
 
 export default class Prosthetic extends React.Component {
     constructor(props) {
-        super(props);
-
+        super()
     };
     
     render() {
@@ -23,7 +22,7 @@ export default class Prosthetic extends React.Component {
                 <Styles>
                     <div>
                         <h1>Prosthetic Simulator</h1>
-                        <p>Assessing kinesthetic feedback in prosthetics</p>
+                        <p>Figuring out how to make prosthetics feel "natural"</p>
                     </div>
                     
                     <h2>Haptic Feedback (n.)</h2>
