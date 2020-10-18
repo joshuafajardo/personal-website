@@ -25,6 +25,12 @@ export default class ChessVsAI extends React.Component {
         })
       }
 
+    componentWillUnmount() {
+        console.log(this.socket)
+        this.socket.emit('disconnect');
+        this.socket.off()
+    }
+
 
     onDrop({ sourceSquare, targetSquare }) {
         if (this.state.waiting) {
