@@ -35,7 +35,8 @@ const Styles = styled.div`
     #sectContainer {
         overflow: scroll;
         height: 100vh;
-        scroll-snap-type: y mandatory;
+        /*scroll-snap-type: y mandatory;*/
+        scroll-snap-type: none;
         scroll-behavior: smooth;
 
         ::-webkit-scrollbar {
@@ -52,18 +53,30 @@ const Styles = styled.div`
     }
 
     .homeJumbo {
+        h1 {
+            font-size: 80px
+        }
+        h2 {
+            font-size: 40px
+        }
+        a {
+            color: #666666;
+            font-weight: bold;
+            font-size: 25px;
+        }
+
         background: url(${splitSky}) no-repeat fixed center;
         background-size: cover;
         background-position: center;
         min-height: 100vh;
         position: relative;
-        padding: 40px;
+        padding: 70px;
 
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: flex-start;
-        color: #ededed;
+        color: #2e4e63;
 
         z-index: 2;
         scroll-snap-align: start;
@@ -211,7 +224,7 @@ export default class Home extends React.Component {
                 
                 <div id="sectContainer">
                     <Jumbotron fluid className='homeJumbo' id='Home'>
-                        <h1>Joshua Fajardo (Work in Progress Website)</h1>
+                        <h1>Joshua Fajardo</h1>
                         <h2>UC Berkeley EECS | Photography</h2>
                         <div className="smallNavigation">
                             <a href="#Prosthetic Simulator">Projects</a>
