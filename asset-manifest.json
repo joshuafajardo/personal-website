@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.fc3971f6.chunk.css",
-    "main.js": "/static/js/main.0eec1809.chunk.js",
-    "main.js.map": "/static/js/main.0eec1809.chunk.js.map",
+    "main.js": "/static/js/main.2fee2638.chunk.js",
+    "main.js.map": "/static/js/main.2fee2638.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ce89729d.js",
     "runtime-main.js.map": "/static/js/runtime-main.ce89729d.js.map",
-    "static/css/2.11829350.chunk.css": "/static/css/2.11829350.chunk.css",
-    "static/js/2.fe790a1a.chunk.js": "/static/js/2.fe790a1a.chunk.js",
-    "static/js/2.fe790a1a.chunk.js.map": "/static/js/2.fe790a1a.chunk.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "/static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.b7dedefc.chunk.js": "/static/js/2.b7dedefc.chunk.js",
+    "static/js/2.b7dedefc.chunk.js.map": "/static/js/2.b7dedefc.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.280f23c62c0b02dd7cb51e579067c576.js": "/precache-manifest.280f23c62c0b02dd7cb51e579067c576.js",
+    "precache-manifest.faaaff2639aa45c71b29365728ed118a.js": "/precache-manifest.faaaff2639aa45c71b29365728ed118a.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.11829350.chunk.css.map": "/static/css/2.11829350.chunk.css.map",
+    "static/css/2.d9ad5f5c.chunk.css.map": "/static/css/2.d9ad5f5c.chunk.css.map",
     "static/css/main.fc3971f6.chunk.css.map": "/static/css/main.fc3971f6.chunk.css.map",
-    "static/js/2.fe790a1a.chunk.js.LICENSE.txt": "/static/js/2.fe790a1a.chunk.js.LICENSE.txt",
+    "static/js/2.b7dedefc.chunk.js.LICENSE.txt": "/static/js/2.b7dedefc.chunk.js.LICENSE.txt",
     "static/media/Instagram.png": "/static/media/Instagram.0e84d592.png",
     "static/media/berkeley_0.jpg": "/static/media/berkeley_0.925f03ec.jpg",
     "static/media/berkeley_1.jpg": "/static/media/berkeley_1.4b705023.jpg",
@@ -28,13 +28,13 @@
     "static/media/la_1.jpg": "/static/media/la_1.f17a0ef5.jpg",
     "static/media/la_2.jpg": "/static/media/la_2.e71521b5.jpg",
     "static/media/me.jpg": "/static/media/me.7efc5e07.jpg",
-    "static/media/splitSky.jpg": "/static/media/splitSky.925f03ec.jpg"
+    "static/media/splitSky.jpg": "/static/media/splitSky.826762be.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.ce89729d.js",
-    "static/css/2.11829350.chunk.css",
-    "static/js/2.fe790a1a.chunk.js",
+    "static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.b7dedefc.chunk.js",
     "static/css/main.fc3971f6.chunk.css",
-    "static/js/main.0eec1809.chunk.js"
+    "static/js/main.2fee2638.chunk.js"
   ]
 }
