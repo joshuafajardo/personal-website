@@ -41,13 +41,13 @@ export default class ChessVsAI extends React.Component {
     };
 
     moveValidation(valid) {
-        if (!valid) {
+        if (!(valid.valid)) {
             this.setState({fen: this.state.fen, waiting: false})
         }
     }
 
     botMove(fen) {
-        this.setState( { fen , waiting: false})
+        this.setState({fen: fen.fen, waiting: false})
     };
 
     render() {
